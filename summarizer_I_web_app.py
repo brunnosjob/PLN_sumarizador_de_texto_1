@@ -32,7 +32,7 @@ foto = Image.open('brn.png')
 st.sidebar.image(foto, use_column_width=True)
 st.sidebar.subheader('Bruno Rodrigues Carloto')
 st.sidebar.markdown('Cientista de dados')
-st.sidebar.markdown('#### Projeto de portfólio de Ciência de Dados')
+st.sidebar.markdown('#### Projeto de portfólio de Processamento de Linguagem Natural')
 st.sidebar.markdown('Em breve haverá artigo descrevendo o passo a passo do projeto. ')
                     
 #Criação de páginas
