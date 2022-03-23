@@ -76,7 +76,7 @@ def sumarizador(url, n_sentencas):
     sentencas_tokenizadas = []
     for sent in texto_original.split('.'):
         sentencas_tokenizadas.append(sent)
-        sentencas_tokenizadas = sentencas_tokenizadas + '.'
+        sentencas_tokenizadas = sentencas_tokenizadas + ['.']
     notas_sentencas = {}
     for sentenca in sentencas_tokenizadas:
         for palavra in sentenca.split():
