@@ -109,7 +109,7 @@ def sumarizador(url, n_sentencas):
 st.write('#### 🌐 Cole ou digite o link da página:')
 url = st.text_input('')
 st.write('### 📑 Digite o total de frases para serem sublinhadas:')
-n_frases = st.number_input('', 1, 20, 0)
+n_frases = st.number_input(' ', 1, 20, 0)
 if st.button('Gerar resumo'):
     sumarizador(url, n_frases)
 
