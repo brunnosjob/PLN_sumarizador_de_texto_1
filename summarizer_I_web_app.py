@@ -25,7 +25,7 @@ nltk.download('punkt')
 
 #Aplicando url em variável
 st.markdown('*__Observação: para mais informações acerca do projeto, clique na seta no canto esquerdo superior da tela__*')
-st.markdown('__ ⚠️ Em aperfeiçoamento__')
+st.markdown('⚠️ Sumarizador em aperfeiçoamento')
 st.markdown(' ')
 
 #Informações em sidebar
