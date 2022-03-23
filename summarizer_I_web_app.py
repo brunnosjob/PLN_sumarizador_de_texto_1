@@ -101,7 +101,7 @@ def sumarizador(url, n_sentencas):
         else:
             texto_html += sentenca
             
-    return display(HTML(f"""{texto}"""))
+    return display(HTML(f"""{texto_html}"""))
 
 #Testando algoritmo
 url = st.text_input('Cole/digite o link da página do site de onde você gostaria de obter o resumo ou fichamento das melhores partes do texto')
