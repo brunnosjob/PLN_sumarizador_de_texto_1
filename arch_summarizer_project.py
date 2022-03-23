@@ -12,13 +12,14 @@ import re #Tratamento de caracteres
 import numpy #Tratamento numérico-matemático-científico
 import pandas #Criação e manipulação de tabelas e series
 import heapq #Selecionar melhores sentenças
+import streamlit as st
 
 #Importando módulos
 from IPython.core.display import HTML #Gerar de textos por HTML
 from goose3 import Goose #Extrair de textos html
 
-#Aplicando url em variável
-url = ''
+st.markdown('*__Observação: para mais informações acerca do projeto, clique na seta no canto esquerdo superior da tela__*')
+st.markdown(' ')
 
 #Criando função (algoritmo) de geração de resumo
 def sumarizador(url, n_sentencas):
@@ -95,6 +96,7 @@ def sumarizador(url, n_sentencas):
             
     return display(HTML(f"""{texto_html}"""))
 
-#Testando algoritmo
+#algoritmo
+url = st.text_input("Cole o link de uma página de site em que contém o conteúdo que você gostaria de obter resumo ou fichamento das partes mais importantes do texto:")
 sumarizador(url, 2)
 
