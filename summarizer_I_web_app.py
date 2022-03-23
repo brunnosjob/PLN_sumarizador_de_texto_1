@@ -37,7 +37,7 @@ st.sidebar.markdown('Em breve haverá artigo descrevendo o passo a passo do proj
                     
 #Criação de páginas
 st.sidebar.title('Menu')
-pag = st.sidebar.selectbox('Selecione a página:', ['Experimentar o sumarizador', 'Sobre o modelo'])
+pag = st.sidebar.selectbox('Selecione a página:', ['Experimentar o sumarizador', 'Sobre o sumarizador automático de texto'])
 st.markdown(' ')
                     
 st.sidebar.markdown("Redes Sociais :")
@@ -135,4 +135,12 @@ if pag == 'Experimentar o sumarizador':
     n_frases = st.number_input(' ', min_value=1, max_value=20)
     if st.button('Gerar sublinhamento'):
         sumarizador(url, n_frases)
+
+elif pag == 'Sobre o sumarizador automático de texto':
+  
+  st.subheader('Sobre o sumarizador automático de texto')
+  st.markdown('''
+  #### Em desenvolvimento
+  
+  ''')
 
