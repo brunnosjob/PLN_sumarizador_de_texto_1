@@ -1,0 +1,11 @@
+numpy >= 1.9.2
+pandas >= 1.2.4
+pip >= 21.3.1
+scikit-learn >= 0.24.1
+streamlit >= 1.1.0
+matplotlib
+pillow >= 8.4.0
+IPython >= 7.22.0
+spacy >= 3.2.3
+goose3 >= 3.1.11
+heapq >= 3.10.3
