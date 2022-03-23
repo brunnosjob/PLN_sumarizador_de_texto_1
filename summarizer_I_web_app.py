@@ -131,7 +131,7 @@ if pag == 'Experimentar o sumarizador':
     #Testando algoritmo
     st.write('#### 🌐 Cole ou digite o link da página:')
     url = st.text_input('')
-    st.write('### 📑 Digite o total de frases para serem sublinhadas:')
+    st.write('#### 📑 Digite o total de frases para serem sublinhadas:')
     n_frases = st.number_input(' ', min_value=1, max_value=20)
     if st.button('Gerar sublinhamento'):
         sumarizador(url, n_frases)
