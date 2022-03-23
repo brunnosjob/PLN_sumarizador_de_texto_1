@@ -25,7 +25,6 @@ nltk.download('punkt')
 
 #Aplicando url em variável
 st.markdown('*__Observação: para mais informações acerca do projeto, clique na seta no canto esquerdo superior da tela__*')
-st.markdown(' ')
 
 #Informações em sidebar
 foto = Image.open('brn.png')
@@ -48,6 +47,7 @@ st.sidebar.markdown("- [Github](https://github.com/brunnosjob)")
 #Desenvolvimento das páginas
 if pag == 'Experimentar o sumarizador':
     st.markdown('⚠️ Sumarizador em aperfeiçoamento')
+    st.markdown(' ')
     st.subheader('Sumarizador de textos por sublinhamento')
     st.write('#### 👨‍🚀 Destaque as partes mais importantes de um texto da internet automaticamente')
 
