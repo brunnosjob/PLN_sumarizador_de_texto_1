@@ -8,4 +8,4 @@ pillow >= 8.4.0
 IPython >= 7.22.0
 spacy >= 3.2.3
 goose3 >= 3.1.11
-heapq >= 3.10.3
+heapq <= 3.10.3
