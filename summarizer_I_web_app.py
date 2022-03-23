@@ -50,7 +50,7 @@ def sumarizador(url, n_sentencas):
     texto = texto.lower()
     
     #Tokenizando o texto
-    for token in word_tokenize(texto):
+    for token in texto.split():
         tokens.append(token)
         
     #Eliminando stopwords
