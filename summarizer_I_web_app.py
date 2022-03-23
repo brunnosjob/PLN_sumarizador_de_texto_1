@@ -25,7 +25,7 @@ nltk.download('punkt')
 
 #Aplicando url em variável
 st.markdown('*__Observação: para mais informações acerca do projeto, clique na seta no canto esquerdo superior da tela__*')
-st.markdown('__Em aperfeiçoamento__')
+st.markdown('__ ⚠️ Em aperfeiçoamento__')
 st.markdown(' ')
 
 #Informações em sidebar
@@ -141,7 +141,7 @@ elif pag == 'Sobre o sumarizador de texto':
   
   st.subheader('Sobre o sumarizador de texto')
   st.markdown('''
-  #### ⚠️ Em desenvolvimento
+  #### ⚠️ Página em desenvolvimento
   
   ''')
 
