@@ -76,6 +76,7 @@ def sumarizador(url, n_sentencas):
     sentencas_tokenizadas = []
     for sent in texto_original.split('.'):
         sentencas_tokenizadas.append(sent)
+        sentencas_tokenizadas = sentencas_tokenizadas + '.'
     notas_sentencas = {}
     for sentenca in sentencas_tokenizadas:
         for palavra in sentenca.split():
@@ -94,7 +95,6 @@ def sumarizador(url, n_sentencas):
     #Gerando interface HTML
     texto_html = ''
     st.write(HTML(f"<h1>Resumo</h1>"))
-    st.write(HTML(f"""<footer>Domínio: {dominio}</footer>"""))
     st.write(HTML(f"<footer>*OBS: R$ é substituído por rs</footer>"))
     st.write(HTML(f"""<h2>{titulo}<h/>"""))
     for sentenca in sentencas_tokenizadas:
