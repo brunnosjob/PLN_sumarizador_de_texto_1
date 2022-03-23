@@ -46,7 +46,7 @@ st.sidebar.markdown("- [Github](https://github.com/brunnosjob)")
                     
 #Desenvolvimento das páginas
 if pag == 'Experimentar o sumarizador':
-    st.markdown('⚠️ Sumarizador em aperfeiçoamento, porém, está livre para uso.')
+    st.markdown('⚠️ Sumarizador em aperfeiçoamento, porém, livre para uso.')
     st.markdown(' ')
     st.markdown(' ')
     st.subheader('Sumarizador de textos por sublinhamento')
