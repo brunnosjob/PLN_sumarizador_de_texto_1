@@ -26,6 +26,8 @@ nltk.download('punkt')
 st.markdown('*__Observação: para mais informações acerca do projeto, clique na seta no canto esquerdo superior da tela__*')
 st.markdown(' ')
 
+ st.subheader('Sumarizador de textos por sublinhado')
+
 #Criando função (algoritmo) de geração de resumo
 def sumarizador(url, n_sentencas):
     
@@ -106,6 +108,8 @@ def sumarizador(url, n_sentencas):
 #Testando algoritmo
 st.write('#### 🌐 Cole ou digite o link da página:')
 url = st.text_input('')
+st.write('#### 🌐 Digite o total de frases para serem sublinhadas:')
+n_frases = st.number_input('')
 if st.button('Gerar resumo'):
-    sumarizador(url, 2)
+    sumarizador(url, n_frases)
 
