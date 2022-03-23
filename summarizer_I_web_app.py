@@ -68,10 +68,12 @@ def sumarizador(url, n_sentencas):
         freq_palavras[palavra] = (freq_palavras[palavra]/freq_max)
         
     #Gerando as notas das sentenças
-    sentencas_tokenizadas = nltk.sent_tokenize(texto)
+    sentencas_tokenizadas = []
+    for sent in texto_original.split('.'):
+        sentencas_tokenizadas.append(sent)
     notas_sentencas = {}
     for sentenca in sentencas_tokenizadas:
-        for palavra in nltk.word_tokenize(sentenca):
+        for palavra in sentenca.split():
             if palavra in freq_palavras.keys():
                 if sentenca not in notas_sentencas.keys():
                     notas_sentencas[sentenca] = freq_palavras[palavra]
