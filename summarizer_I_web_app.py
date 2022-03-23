@@ -105,7 +105,7 @@ def sumarizador(url, n_sentencas):
 
 #Testando algoritmo
 st.write('##### Cole ou digite o link da página:')
-url = st.text_input('')
+url = st.text_input('🔗')
 if st.button('Gerar resumo'):
     sumarizador(url, 2)
 
