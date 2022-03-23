@@ -82,7 +82,7 @@ if pag == 'Experimentar o sumarizador':
             tokens.append(token)
         
         #Eliminando stopwords
-        texto_limpo = [elemento for elemento in tokens if elemento not in stpwrds and elemento not in pontuacoes and not elemento.isdigit()]
+        texto_limpo = [elemento for elemento in tokens if elemento not in stpwrds and elemento not in pontuacoes and not elemento.isdigit() and elemento.isalpha()]
     
         #Unificando texto limpo
         texto_limpo = ' '.join(texto_limpo)
