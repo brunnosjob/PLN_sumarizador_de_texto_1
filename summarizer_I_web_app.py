@@ -27,7 +27,7 @@ st.markdown('*__Observação: para mais informações acerca do projeto, clique 
 st.markdown(' ')
 
 st.subheader('Sumarizador de textos por sublinhamento')
-st.write('#### ✎ Destaque as partes mais importantes de um texto da internet automaticamente')
+st.write('#### 👨‍🚀 Destaque as partes mais importantes de um texto da internet automaticamente')
 
 #Criando função (algoritmo) de geração de resumo
 def sumarizador(url, n_sentencas):
