@@ -140,7 +140,7 @@ elif pag == 'Sobre o sumarizador de texto':
   
   st.subheader('Sobre o sumarizador de texto')
   st.markdown('''
-  #### Em desenvolvimento
+  #### ⚠️ Em desenvolvimento
   
   ''')
 
