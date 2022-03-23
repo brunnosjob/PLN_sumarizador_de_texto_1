@@ -19,6 +19,8 @@ from nltk import word_tokenize
 from IPython.core.display import HTML #Gerar de textos por HTML
 from goose3 import Goose #Extrair de textos html
 
+nltk.download('punkt')
+
 #Aplicando url em variável
 st.markdown('*__Observação: para mais informações acerca do projeto, clique na seta no canto esquerdo superior da tela__*')
 st.markdown(' ')
@@ -98,7 +100,7 @@ def sumarizador(url, n_sentencas):
         else:
             texto_html += sentenca
             
-    return display(HTML(f"""{texto_html}"""))
+    return IPython.core.display(HTML(f"""{texto_html}"""))
 
 #Testando algoritmo
 url = st.text_input('Cole/digite o link da página do site de onde você gostaria de obter o resumo ou fichamento das melhores partes do texto')
