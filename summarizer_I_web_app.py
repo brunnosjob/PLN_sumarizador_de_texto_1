@@ -15,6 +15,7 @@ import heapq #Selecionar melhores sentenças
 import streamlit as st
 
 #Importando módulos
+from nltk import word_tokenize
 from IPython.core.display import HTML #Gerar de textos por HTML
 from goose3 import Goose #Extrair de textos html
 
@@ -49,7 +50,7 @@ def sumarizador(url, n_sentencas):
     texto = texto.lower()
     
     #Tokenizando o texto
-    for token in nltk.word_tokenize(texto):
+    for token in word_tokenize(texto):
         tokens.append(token)
         
     #Eliminando stopwords
