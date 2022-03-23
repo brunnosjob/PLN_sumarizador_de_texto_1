@@ -91,17 +91,17 @@ def sumarizador(url, n_sentencas):
     
     #Gerando interface HTML
     texto_html = ''
-    IPython.core.display(HTML(f"<h1>Resumo</h1>"))
-    IPython.core.display(HTML(f"""<footer>Domínio: {dominio}</footer>"""))
-    IPython.core.display(HTML(f"<footer>*OBS: R$ é substituído por rs</footer>"))
-    IPython.core.display(HTML(f"""<h2>{titulo}<h/>"""))
+    st.write(HTML(f"<h1>Resumo</h1>"))
+    st.write(HTML(f"""<footer>Domínio: {dominio}</footer>"""))
+    st.write(HTML(f"<footer>*OBS: R$ é substituído por rs</footer>"))
+    st.write(HTML(f"""<h2>{titulo}<h/>"""))
     for sentenca in sentencas_tokenizadas:
         if sentenca in melhores_sentencas:
             texto_html += str(sentenca).replace(sentenca, f"<mark style='background-color: yellow'>{sentenca}</mark>")
         else:
             texto_html += sentenca
             
-    return IPython.core.display((HTML(f"""{texto_html}""")))
+    return st.write((HTML(f"""{texto_html}""")))
 
 #Testando algoritmo
 url = st.text_input('Cole/digite o link da página do site de onde você gostaria de obter o resumo ou fichamento das melhores partes do texto')
