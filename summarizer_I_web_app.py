@@ -60,7 +60,7 @@ def sumarizador(url, n_sentencas):
     texto_limpo = ' '.join(texto_limpo)
     
     #Gerando frequência de palavras
-    freq_palavras = nltk.FreqDist(nltk.word_tokenize(texto_limpo))
+    freq_palavras = nltk.FreqDist([word for word in texto_limpo.split()])
     freq_max = max(freq_palavras.values())
     
     #Geração dos pesos
